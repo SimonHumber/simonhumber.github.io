@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Home Page</title>
+        <meta name="author" content="Simon">
+        <meta charset="UTF-8">
+        <meta name="description" content="Home page of my website">
+        <meta name="keywords" content="HTML, CSS, Web Design">
+        <link rel="stylesheet" href="test2.css" type="text/css">
+        <!-- command + / to comment and uncomment -->
+        <link rel="icon" href="icon2.png" type="image/x-icon">
+        <!-- if use /icon.png, it will pull icon.png from parent directory -->
+        <!-- xicon are special type of image for the website icon -->
+        <!-- favicon.io and unsplash -->
+        <!-- shift command p to search -->
+
+    </head>
+
+    <body>
+        <header>
+            <img src="icon.jpg" alt="Icon" width="500" height="500">
+            <nav>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <!-- required form to fill out -->
+            <form action="survey.py" name="email_form" method="post"> 
+                <label for="email">Your email address</label>           
+                <input type="email" name="email" id="email" required>
+                <input type="submit" name="submit" value="submit survey">
+    
+            </form>
+            <!-- input ranges -->
+            <form action="test.py" name="test_form" method="get">
+                <label for="investment">Monthly investment</label>
+                <input type="number" name="investment" id="investment" min="100" max="1000" step="100" value="300">
+                <br>
+                <br>
+                
+                <label for="book">Rate book from 1 to 5</label>
+                <input type="range" name="book" id="book" min="1" max="5" step="1">
+                <input type="submit" name="submit" value="Submit Survey">
+                <br>
+                <br>
+            </form>
+
+            <!-- date and time controls -->
+            Date and Time
+            <input type="datetime" name="datetime">
+            <br><br>
+            Local date and time
+            <input type="datetime-local" name="datelocal">
+            <br><br>
+            Month
+            <input type="month" name="month">
+            <br><br>
+            Week
+            <input type="week" name="week">
+            <br><br>
+            Time
+            <input type="time" name="time">
+            <br><br>
+            Date
+            <input type="date" name="date">
+            <br><br>
+            <!-- google search -->
+            <form action="http://www.google.com/search" method="get">
+                <input type="search" name="q" size="30" maxlength="255">
+                <input type="hidden" name="domains" value="http://www.murach.com">
+                <input type="submit" name="search" value="Search">
+            </form>
+
+            <div id="fixed">div-4
+                <section class="grid-container">
+                    <div class="grid-item">item-1</div>
+                    <div class="grid-item">item-2</div>
+                    <div class="grid-item">item-3</div>
+                    <div class="grid-item">item-4</div>
+                    <div class="grid-item">item-5</div>
+                    <div class="grid-item">item-6</div>
+
+                </section>
+            </div>
+
+        </main>
+
+        <footer>
+            <p>Author: Simon</p>
+            <p>&copy;&nbsp; All rights reserved</p>
+        </footer>
+    </body>
