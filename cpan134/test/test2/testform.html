@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Home Page</title>
+        <meta name="author" content="Simon">
+        <meta charset="UTF-8">
+        <meta name="description" content="Test Form">
+        <meta name="keywords" content="HTML, CSS, Web Design">
+        <link rel="stylesheet" href="" type="text/css">
+        <!-- command + / to comment and uncomment -->
+        <link rel="icon" href="icon2.png" type="image/x-icon">
+        <!-- if use /icon.png, it will pull icon.png from parent directory -->
+        <!-- xicon are special type of image for the website icon -->
+        <!-- favicon.io and unsplash -->
+        <!-- shift command p to search -->
+
+    </head>
+
+    <body>
+        <form action="surveyb.py" name="test_form" method="post">
+            <p>Please complete our survey</p>
+            <p>Contact Information</p>
+            <label for="email">Email Address:</label>
+            <input type="email" name="email_form" id="email_form">
+            <label for="firstname">First name:</label>
+            <input type="text" name="firstname" id="frstname">
+            <label for="lastname">Last name:</label>
+            <input type="text" name="lastname" id="lastname">
+            <p>Geographic Information</p>
+            <label for="province">Province:</label>
+            <input type="text" name="province" maxlength="2" value="2 Letters">
+            <label for="postalcode">Postal code:</label>
+            <input type="text" name="postalcode" maxlength="6">
+            <p>How did you hear about us?</p>
+            <label for="search">Web Search</label>
+            <input type="checkbox" name="search" id="search">
+            <br>
+            <label for="facebook">Facebook:</label>
+            <input type="checkbox" name="facebook" id="facebook">
+            <label for="twitter">Twitter:</label>
+            <input type="checkbox" name="twitter" id="twitter">
+            <br>
+            <label for="email">Email message:</label>
+            <input type="checkbox" name="email" id="email">
+
+        </form>
+    </body>
