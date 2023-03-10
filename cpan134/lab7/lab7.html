@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Home Page</title>
+        <meta name="author" content="Simon">
+        <meta charset="UTF-8">
+        <meta name="description" content="Lab 7">
+        <meta name="keywords" content="HTML, CSS, Web Design">
+        <link rel="stylesheet" href="lab7.css" type="text/css">
+        <link rel="icon" href="" type="image/x-icon">
+        <script src="lab7.js" defer></script>  
+        </head>
+        
+    <body>
+        <header>
+            <h1>Festival Information</h1>
+        </header>
+
+        <section>
+            <div id="halloween" style="display:none;">
+                <img src="Halloween.jpg" alt="Halloween pumpkins" width="500" height="350">
+                <p>Halloween is on the 31st of October. It is a holiday where people dress up and kids collect candy.</p>
+            </div>
+
+            <div id="christmas" style="display: none;">
+                <img src="Christmas.jpg" alt="Christmas tree" width="400" height="600">
+                <p>Christmas is on the 25th of December. It is a holiday where people loved ones presents.</p>
+            </div>
+
+            <div id="newyears" style="display: none;">
+                <img src="Newyears.jpg" alt="Fireworks" width="600" height="400">
+                <p>New years is on the 1st of January. It is a holiday where people celebrate the new year.</p>
+            </div>
+
+            <button onclick="funcHalloween()">Halloween</button>
+            <button onclick="hideHalloween()">Hide</button>
+            <br>
+            <br>
+            <button onclick="funcChristmas()">Christmas</button>
+            <button onclick="hideChristmas()">Hide</button>
+            <br>
+            <br>
+            <button onclick="funcNewyears()">New Year</button>
+            <button onclick="hideNewyears()">Hide</button>
+        </section>
+
+        <footer>
+            <p>&copy; Copyright 2023 Simon Tran</p>
+        </footer>
+    </body>
